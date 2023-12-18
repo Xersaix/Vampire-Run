@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cweulkujtrwhx"]
+
+[ext_resource type="Texture2D" uid="uid://bwmtmekye4p0k" path="res://Map/Background/lune.png" id="1_w8mvu"]
+
+[sub_resource type="Environment" id="Environment_id8o0"]
+background_mode = 3
+ambient_light_energy = 0.0
+sdfgi_use_occlusion = true
+sdfgi_read_sky_light = false
+glow_enabled = true
+glow_levels/2 = 13.41
+glow_levels/3 = 16.0
+glow_levels/4 = 16.0
+glow_levels/5 = 16.0
+glow_levels/6 = 7.76
+glow_intensity = 0.9
+glow_hdr_threshold = 0.0
+glow_hdr_scale = 3.6
+fog_light_color = Color(1, 1, 1, 1)
+adjustment_enabled = true
+
+[node name="Moon" type="Node2D"]
+y_sort_enabled = true
+scale = Vector2(0.5, 0.5)
+
+[node name="Moon" type="Sprite2D" parent="."]
+modulate = Color(1, 0.952941, 1, 1)
+use_parent_material = true
+texture = ExtResource("1_w8mvu")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_id8o0")

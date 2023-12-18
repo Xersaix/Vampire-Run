@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://l0e8ij5kbl53"]
+
+[ext_resource type="PackedScene" uid="uid://cweulkujtrwhx" path="res://Map/Background/moon.tscn" id="1_15hl2"]
+[ext_resource type="Texture2D" uid="uid://dpxtby2ipighe" path="res://Map/Background/arbre1a.png" id="2_quxre"]
+[ext_resource type="Texture2D" uid="uid://bsdnatjk1rj3" path="res://Map/Background/arbre2a.png" id="3_xwb5s"]
+[ext_resource type="Texture2D" uid="uid://2etjucm176f6" path="res://Character/Obstacle/pierre1.png" id="4_atc04"]
+[ext_resource type="Texture2D" uid="uid://8u7g01nll821" path="res://Map/Background/brouillard.png" id="6_2e8fw"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_afsxb"]
+specular_color = Color(0.282353, 0.584314, 0.603922, 1)
+
+[node name="Background" type="CanvasGroup"]
+z_index = -2
+
+[node name="Back-color" type="Sprite2D" parent="."]
+modulate = Color(0.282353, 0.584314, 0.603922, 1)
+position = Vector2(1556, 323.25)
+scale = Vector2(3640, 647.5)
+texture = SubResource("CanvasTexture_afsxb")
+
+[node name="Moon" parent="." instance=ExtResource("1_15hl2")]
+z_index = -2
+z_as_relative = false
+y_sort_enabled = false
+position = Vector2(559, 179)
+
+[node name="Arbre1a" type="Sprite2D" parent="."]
+position = Vector2(1002, 220)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_quxre")
+
+[node name="Arbre2a" type="Sprite2D" parent="."]
+position = Vector2(245, 301)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_xwb5s")
+
+[node name="Pierre1" type="Sprite2D" parent="."]
+position = Vector2(486, 467)
+texture = ExtResource("4_atc04")
+
+[node name="Brouillard" type="Sprite2D" parent="."]
+position = Vector2(849, 440)
+texture = ExtResource("6_2e8fw")
+
+[node name="Brouillard2" type="Sprite2D" parent="."]
+position = Vector2(128, 228)
+texture = ExtResource("6_2e8fw")
