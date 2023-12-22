@@ -1,0 +1,265 @@
+[gd_scene load_steps=63 format=3 uid="uid://4gm8dm14ka1r"]
+
+[ext_resource type="Texture2D" uid="uid://d3w6nmx53gfdv" path="res://Character/Obstacle/fire/Composition 100.png" id="1_tpipx"]
+[ext_resource type="Texture2D" uid="uid://b2hgdet6lqyub" path="res://Character/Obstacle/fire/Composition 101.png" id="2_2yq6w"]
+[ext_resource type="Texture2D" uid="uid://bt1rp2l0nih5t" path="res://Character/Obstacle/fire/Composition 102.png" id="3_77506"]
+[ext_resource type="Texture2D" uid="uid://ck88xduyb0rcd" path="res://Character/Obstacle/fire/Composition 103.png" id="4_6jkvf"]
+[ext_resource type="Texture2D" uid="uid://d3ylh3xnrqum" path="res://Character/Obstacle/fire/Composition 104.png" id="5_cw0ai"]
+[ext_resource type="Texture2D" uid="uid://0f0ggif8w280" path="res://Character/Obstacle/fire/Composition 105.png" id="6_n35fm"]
+[ext_resource type="Texture2D" uid="uid://ctw84yhan0kkk" path="res://Character/Obstacle/fire/Composition 106.png" id="7_3aqyc"]
+[ext_resource type="Texture2D" uid="uid://cbutqahac6drb" path="res://Character/Obstacle/fire/Composition 107.png" id="8_ilbon"]
+[ext_resource type="Texture2D" uid="uid://ci35urfn62sxo" path="res://Character/Obstacle/fire/Composition 108.png" id="9_pl7og"]
+[ext_resource type="Texture2D" uid="uid://bvmyg66j06d71" path="res://Character/Obstacle/fire/Composition 109.png" id="10_4bru4"]
+[ext_resource type="Texture2D" uid="uid://ctlqwmdwrg65r" path="res://Character/Obstacle/fire/Composition 110.png" id="11_2ktbr"]
+[ext_resource type="Texture2D" uid="uid://4k7odhuq43xc" path="res://Character/Obstacle/fire/Composition 111.png" id="12_kup00"]
+[ext_resource type="Texture2D" uid="uid://hrourn2nviax" path="res://Character/Obstacle/fire/Composition 112.png" id="13_byes1"]
+[ext_resource type="Texture2D" uid="uid://ct4sm0sst7giy" path="res://Character/Obstacle/fire/Composition 113.png" id="14_i43ip"]
+[ext_resource type="Texture2D" uid="uid://c8l0aemcddrci" path="res://Character/Obstacle/fire/Composition 114.png" id="15_8wfdr"]
+[ext_resource type="Texture2D" uid="uid://dnve2k4qr5dg5" path="res://Character/Obstacle/fire/Composition 115.png" id="16_nvmar"]
+[ext_resource type="Texture2D" uid="uid://dwv8x311833jm" path="res://Character/Obstacle/fire/Composition 116.png" id="17_468qi"]
+[ext_resource type="Texture2D" uid="uid://bwnnnyf33swql" path="res://Character/Obstacle/fire/Composition 117.png" id="18_24bxv"]
+[ext_resource type="Texture2D" uid="uid://d3hy1d785hlij" path="res://Character/Obstacle/fire/Composition 118.png" id="19_gvmks"]
+[ext_resource type="Texture2D" uid="uid://bxagxgklkxg63" path="res://Character/Obstacle/fire/Composition 119.png" id="20_8yp8f"]
+[ext_resource type="Texture2D" uid="uid://b5bueicn4kuck" path="res://Character/Obstacle/fire/Composition 120.png" id="21_lc2lw"]
+[ext_resource type="Texture2D" uid="uid://dbmrurpn3ni5y" path="res://Character/Obstacle/fire/Composition 121.png" id="22_xjday"]
+[ext_resource type="Texture2D" uid="uid://bqotb5wpb01xu" path="res://Character/Obstacle/fire/Composition 122.png" id="23_v0scs"]
+[ext_resource type="Texture2D" uid="uid://cqiytrmh77gwe" path="res://Character/Obstacle/fire/Composition 123.png" id="24_saaun"]
+[ext_resource type="Texture2D" uid="uid://dvht0k22xbrjl" path="res://Character/Obstacle/fire/Composition 124.png" id="25_yoymx"]
+[ext_resource type="Texture2D" uid="uid://buaudssvtsof2" path="res://Character/Obstacle/fire/Composition 125.png" id="26_i11ri"]
+[ext_resource type="Texture2D" uid="uid://bncffe1h344xa" path="res://Character/Obstacle/fire/Composition 126.png" id="27_xcnh7"]
+[ext_resource type="Texture2D" uid="uid://u6pv11kfns16" path="res://Character/Obstacle/fire/Composition 127.png" id="28_g3ukp"]
+[ext_resource type="Texture2D" uid="uid://bf8gnwk7pqc8a" path="res://Character/Obstacle/fire/Composition 128.png" id="29_7y5ow"]
+[ext_resource type="Texture2D" uid="uid://dqqc57o2p06bp" path="res://Character/Obstacle/fire/Composition 129.png" id="30_uda5l"]
+[ext_resource type="Texture2D" uid="uid://bh0nlve1q2o6v" path="res://Character/Obstacle/fire/Composition 130.png" id="31_pnqx1"]
+[ext_resource type="Texture2D" uid="uid://cdirrxbuogvyw" path="res://Character/Obstacle/fire/Composition 131.png" id="32_xs2op"]
+[ext_resource type="Texture2D" uid="uid://dlaflaiaktsft" path="res://Character/Obstacle/fire/Composition 132.png" id="33_7f4ry"]
+[ext_resource type="Texture2D" uid="uid://bo5t8nwxiffyc" path="res://Character/Obstacle/fire/Composition 133.png" id="34_a1y3w"]
+[ext_resource type="Texture2D" uid="uid://cmr8o3x73y78f" path="res://Character/Obstacle/fire/Composition 134.png" id="35_d5p3q"]
+[ext_resource type="Texture2D" uid="uid://d0mvbi7pwg4up" path="res://Character/Obstacle/fire/Composition 135.png" id="36_6jwcy"]
+[ext_resource type="Texture2D" uid="uid://vsryyie6ku6f" path="res://Character/Obstacle/fire/Composition 136.png" id="37_ssftg"]
+[ext_resource type="Texture2D" uid="uid://cotk5kwedctl0" path="res://Character/Obstacle/fire/Composition 137.png" id="38_u7vnc"]
+[ext_resource type="Texture2D" uid="uid://b6kxw5haobhk7" path="res://Character/Obstacle/fire/Composition 138.png" id="39_fplxq"]
+[ext_resource type="Texture2D" uid="uid://40tdwkucrbrw" path="res://Character/Obstacle/fire/Composition 139.png" id="40_p4bkd"]
+[ext_resource type="Texture2D" uid="uid://houc1dq2dege" path="res://Character/Obstacle/fire/Composition 140.png" id="41_dj135"]
+[ext_resource type="Texture2D" uid="uid://bitwwa7w4tjva" path="res://Character/Obstacle/fire/Composition 141.png" id="42_fc7py"]
+[ext_resource type="Texture2D" uid="uid://cqu5k33aenx1i" path="res://Character/Obstacle/fire/Composition 142.png" id="43_oroce"]
+[ext_resource type="Texture2D" uid="uid://ykghd1x85kcs" path="res://Character/Obstacle/fire/Composition 143.png" id="44_nyti5"]
+[ext_resource type="Texture2D" uid="uid://cmf5nox1feiva" path="res://Character/Obstacle/fire/Composition 144.png" id="45_w8bp4"]
+[ext_resource type="Texture2D" uid="uid://dadjbnl307ugd" path="res://Character/Obstacle/fire/Composition 145.png" id="46_3elh2"]
+[ext_resource type="Texture2D" uid="uid://1hxmi6yjagua" path="res://Character/Obstacle/fire/Composition 146.png" id="47_s7bg4"]
+[ext_resource type="Texture2D" uid="uid://jlbt2ogvjjib" path="res://Character/Obstacle/fire/Composition 147.png" id="48_c6mb1"]
+[ext_resource type="Texture2D" uid="uid://4vlaxjy3m3an" path="res://Character/Obstacle/fire/Composition 148.png" id="49_ut1lv"]
+[ext_resource type="Texture2D" uid="uid://dkpt4i475eh4d" path="res://Character/Obstacle/fire/Composition 149.png" id="50_ju8b1"]
+[ext_resource type="Texture2D" uid="uid://bigcx8apgcklf" path="res://Character/Obstacle/fire/Composition 150.png" id="51_12hsu"]
+[ext_resource type="Texture2D" uid="uid://biyoks6kt5lov" path="res://Character/Obstacle/fire/Composition 151.png" id="52_232b1"]
+[ext_resource type="Texture2D" uid="uid://dfei377beop5a" path="res://Character/Obstacle/fire/Composition 152.png" id="53_dr36o"]
+[ext_resource type="Texture2D" uid="uid://k8dxpnbxpk78" path="res://Character/Obstacle/fire/Composition 153.png" id="54_gqc1d"]
+[ext_resource type="Texture2D" uid="uid://cv67uirvybklu" path="res://Character/Obstacle/fire/Composition 154.png" id="55_dwmb7"]
+[ext_resource type="Texture2D" uid="uid://bdvgrpmbmrnpf" path="res://Character/Obstacle/fire/Composition 155.png" id="56_cogon"]
+[ext_resource type="Texture2D" uid="uid://dsf0lt7gdmpk0" path="res://Character/Obstacle/fire/Composition 156.png" id="57_t0pa2"]
+[ext_resource type="Texture2D" uid="uid://dwcpnsej88o5s" path="res://Character/Obstacle/fire/Composition 157.png" id="58_ii4ug"]
+[ext_resource type="Texture2D" uid="uid://dolfjxkucdse6" path="res://Character/Obstacle/fire/Composition 158.png" id="59_qiotv"]
+[ext_resource type="Texture2D" uid="uid://3t085bijo0p5" path="res://Character/Obstacle/fire/Composition 159.png" id="60_fp4g5"]
+[ext_resource type="Texture2D" uid="uid://c7tdf1kimawlx" path="res://Character/Obstacle/foyer-feu.png" id="61_neb7d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mksd7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tpipx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2yq6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_77506")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6jkvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cw0ai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_n35fm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3aqyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ilbon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pl7og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4bru4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2ktbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kup00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_byes1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_i43ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8wfdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nvmar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_468qi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_24bxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gvmks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8yp8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_lc2lw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xjday")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_v0scs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_saaun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yoymx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_i11ri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xcnh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_g3ukp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7y5ow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_uda5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_pnqx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_xs2op")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_7f4ry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_a1y3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_d5p3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_6jwcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ssftg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_u7vnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_fplxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_p4bkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_dj135")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_fc7py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_oroce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_nyti5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_w8bp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_3elh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_s7bg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_c6mb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ut1lv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_ju8b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_12hsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_232b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_dr36o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_gqc1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_dwmb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_cogon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_t0pa2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ii4ug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_qiotv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_fp4g5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 18.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_mksd7")
+autoplay = "default"
+frame_progress = 0.405296
+
+[node name="Foyer-feu" type="Sprite2D" parent="AnimatedSprite2D"]
+z_index = -1
+position = Vector2(-40, 205)
+scale = Vector2(2, 2)
+texture = ExtResource("61_neb7d")

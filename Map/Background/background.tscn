@@ -1,47 +1,67 @@
 [gd_scene load_steps=7 format=3 uid="uid://l0e8ij5kbl53"]
 
 [ext_resource type="PackedScene" uid="uid://cweulkujtrwhx" path="res://Map/Background/moon.tscn" id="1_15hl2"]
+[ext_resource type="Texture2D" uid="uid://di6rlqw0q88g6" path="res://Map/Background/degrade.png" id="1_toxou"]
 [ext_resource type="Texture2D" uid="uid://dpxtby2ipighe" path="res://Map/Background/arbre1a.png" id="2_quxre"]
 [ext_resource type="Texture2D" uid="uid://bsdnatjk1rj3" path="res://Map/Background/arbre2a.png" id="3_xwb5s"]
 [ext_resource type="Texture2D" uid="uid://2etjucm176f6" path="res://Character/Obstacle/pierre1.png" id="4_atc04"]
 [ext_resource type="Texture2D" uid="uid://8u7g01nll821" path="res://Map/Background/brouillard.png" id="6_2e8fw"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_afsxb"]
-specular_color = Color(0.282353, 0.584314, 0.603922, 1)
+[node name="Background" type="Node2D"]
+visible = false
+z_index = -100
+texture_filter = 5
 
-[node name="Background" type="CanvasGroup"]
-z_index = -2
+[node name="Bacjground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(0, 100)
 
-[node name="Back-color" type="Sprite2D" parent="."]
+[node name="Back-color" type="Sprite2D" parent="Bacjground"]
 modulate = Color(0.282353, 0.584314, 0.603922, 1)
-position = Vector2(1556, 323.25)
-scale = Vector2(3640, 647.5)
-texture = SubResource("CanvasTexture_afsxb")
+z_index = -100
+position = Vector2(1948, 324.5)
+scale = Vector2(419.956, 0.602778)
+texture = ExtResource("1_toxou")
+metadata/_edit_lock_ = true
 
-[node name="Moon" parent="." instance=ExtResource("1_15hl2")]
-z_index = -2
-z_as_relative = false
-y_sort_enabled = false
-position = Vector2(559, 179)
+[node name="Parallax-Moon" type="ParallaxBackground" parent="."]
 
-[node name="Arbre1a" type="Sprite2D" parent="."]
-position = Vector2(1002, 220)
+[node name="Moon" parent="Parallax-Moon" instance=ExtResource("1_15hl2")]
+position = Vector2(21, 64)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_offset = Vector2(0, -80)
+
+[node name="Arbre1a" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(996, 306)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_quxre")
 
-[node name="Arbre2a" type="Sprite2D" parent="."]
-position = Vector2(245, 301)
+[node name="Arbre1a2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1630, 306)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_quxre")
+
+[node name="Arbre2a" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(229, 314)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("3_xwb5s")
 
-[node name="Pierre1" type="Sprite2D" parent="."]
-position = Vector2(486, 467)
+[node name="Pierre1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(491, 494)
 texture = ExtResource("4_atc04")
 
-[node name="Brouillard" type="Sprite2D" parent="."]
-position = Vector2(849, 440)
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.9, 1)
+motion_offset = Vector2(0, -50)
+
+[node name="Brouillard" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(1108, 376)
 texture = ExtResource("6_2e8fw")
 
-[node name="Brouillard2" type="Sprite2D" parent="."]
-position = Vector2(128, 228)
+[node name="Brouillard2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(264, 311)
 texture = ExtResource("6_2e8fw")
+
+[node name="ParallaxBackground4" type="ParallaxBackground" parent="."]
