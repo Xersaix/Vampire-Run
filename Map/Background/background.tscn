@@ -29,24 +29,34 @@ metadata/_edit_lock_ = true
 position = Vector2(21, 64)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+follow_viewport_enabled = true
+scroll_offset = Vector2(1000, 0)
+scroll_base_offset = Vector2(0, -50)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = -3
+motion_offset = Vector2(0, -80)
+motion_mirroring = Vector2(1500, 0)
+
+[node name="Arbre2a" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(274, 319)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_xwb5s")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_offset = Vector2(0, -80)
-
-[node name="Arbre1a" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(996, 306)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("2_quxre")
+motion_mirroring = Vector2(2000, 0)
 
 [node name="Arbre1a2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(1630, 306)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_quxre")
 
-[node name="Arbre2a" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(229, 314)
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("3_xwb5s")
+[node name="Arbre1a" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+z_index = 3
+position = Vector2(821, 307)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_quxre")
 
 [node name="Pierre1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(491, 494)
@@ -55,6 +65,7 @@ texture = ExtResource("4_atc04")
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0.9, 1)
 motion_offset = Vector2(0, -50)
+motion_mirroring = Vector2(2000, 0)
 
 [node name="Brouillard" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(1108, 376)

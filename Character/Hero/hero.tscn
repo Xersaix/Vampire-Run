@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://3twf6audap0c"]
+[gd_scene load_steps=70 format=3 uid="uid://3twf6audap0c"]
 
 [ext_resource type="Script" path="res://Character/Hero/hero.gd" id="1_e57pv"]
 [ext_resource type="Texture2D" uid="uid://byj4jtsqoqj4t" path="res://Character/Hero/die/Composition 100.png" id="2_3qja8"]
@@ -56,6 +56,8 @@
 [ext_resource type="Texture2D" uid="uid://ljgmyeynlke7" path="res://Character/Hero/die/Composition 114.png" id="28_b3184"]
 [ext_resource type="Texture2D" uid="uid://dvr14rs72eghf" path="res://Character/Hero/run/perso 226.png" id="28_nv0x0"]
 [ext_resource type="Texture2D" uid="uid://bjyrd41kaec35" path="res://Character/Hero/run/perso 227.png" id="29_vw2kg"]
+[ext_resource type="AudioStream" uid="uid://caceslpi2i8ch" path="res://Character/Hero/run/audio/course1.mp3" id="57_3nsh8"]
+[ext_resource type="AudioStream" uid="uid://b226kdtyugwgq" path="res://Character/Hero/run/audio/course2.mp3" id="58_xsrkb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kdwkk"]
 animations = [{
@@ -145,6 +147,11 @@ animations = [{
 "name": &"die",
 "speed": 20.0
 }, {
+"frames": [],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_lpgdr")
@@ -232,7 +239,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 40.0
+"speed": 47.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_apo3x"]
@@ -268,6 +275,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_f8sqw"]
 resource_name = "die"
+length = 0.48
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -275,7 +283,7 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.6),
+"times": PackedFloat32Array(0, 0.461035),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0, 26]
@@ -292,10 +300,24 @@ tracks/1/keys = {
 "update": 1,
 "values": [&"die"]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.344033, 0.418364),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-400, 150), Vector2(-400, 50)]
+}
 
 [sub_resource type="Animation" id="Animation_a4d6h"]
 resource_name = "run"
+length = 0.76
 loop_mode = 1
+step = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -303,7 +325,7 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 0.76),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0, 27]
@@ -320,6 +342,29 @@ tracks/1/keys = {
 "update": 1,
 "values": [&"run"]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0378,
+"start_offset": 0.127859,
+"stream": ExtResource("57_3nsh8")
+}, {
+"end_offset": 0.0378,
+"start_offset": 0.116234,
+"stream": ExtResource("57_3nsh8")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0954209,
+"stream": ExtResource("58_xsrkb")
+}],
+"times": PackedFloat32Array(0.105359, 0.323734, 0.59)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_le8i0"]
 _data = {
@@ -334,18 +379,19 @@ animation = &"die"
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_if2u0"]
 animation = &"run"
 
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ykuln"]
-advance_mode = 2
-
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1qvcp"]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c1ist"]
+advance_mode = 2
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_n1p86"]
-states/Start/position = Vector2(184, 107)
+states/End/position = Vector2(898, 100)
+states/Start/position = Vector2(175, 108)
 states/die/node = SubResource("AnimationNodeAnimation_sxwii")
-states/die/position = Vector2(551, 138)
+states/die/position = Vector2(551, 142)
 states/run/node = SubResource("AnimationNodeAnimation_if2u0")
 states/run/position = Vector2(379, 68)
-transitions = ["Start", "run", SubResource("AnimationNodeStateMachineTransition_ykuln"), "run", "die", SubResource("AnimationNodeStateMachineTransition_1qvcp")]
+transitions = ["run", "die", SubResource("AnimationNodeStateMachineTransition_1qvcp"), "Start", "run", SubResource("AnimationNodeStateMachineTransition_c1ist")]
 
 [node name="Hero" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
@@ -354,7 +400,6 @@ floor_constant_speed = true
 script = ExtResource("1_e57pv")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -6)
 sprite_frames = SubResource("SpriteFrames_kdwkk")
 animation = &"run"
 autoplay = "run"
@@ -369,10 +414,14 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+audio_max_polyphony = 52
 libraries = {
 "": SubResource("AnimationLibrary_le8i0")
 }
 tree_root = SubResource("AnimationNodeStateMachine_n1p86")
 anim_player = NodePath("../AnimationPlayer")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"run"
 
 [connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]

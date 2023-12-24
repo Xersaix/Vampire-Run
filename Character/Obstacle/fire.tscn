@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://4gm8dm14ka1r"]
+[gd_scene load_steps=64 format=3 uid="uid://4gm8dm14ka1r"]
 
 [ext_resource type="Texture2D" uid="uid://d3w6nmx53gfdv" path="res://Character/Obstacle/fire/Composition 100.png" id="1_tpipx"]
 [ext_resource type="Texture2D" uid="uid://b2hgdet6lqyub" path="res://Character/Obstacle/fire/Composition 101.png" id="2_2yq6w"]
@@ -250,7 +250,11 @@ animations = [{
 "speed": 18.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mx00c"]
+radius = 120.0
+height = 520.0
+
+[node name="fire" type="StaticBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
@@ -263,3 +267,8 @@ z_index = -1
 position = Vector2(-40, 205)
 scale = Vector2(2, 2)
 texture = ExtResource("61_neb7d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6, 3)
+scale = Vector2(0.2, 0.2)
+shape = SubResource("CapsuleShape2D_mx00c")

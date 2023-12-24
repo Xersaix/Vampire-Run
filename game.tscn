@@ -1,10 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://rgdhoeqj61ee"]
+[gd_scene load_steps=5 format=3 uid="uid://rgdhoeqj61ee"]
 
 [ext_resource type="PackedScene" uid="uid://coxmyunjm4h65" path="res://Map/Tile/tile_map.tscn" id="1_dopwa"]
 [ext_resource type="PackedScene" uid="uid://3twf6audap0c" path="res://Character/Hero/hero.tscn" id="2_xvipm"]
 [ext_resource type="PackedScene" uid="uid://l0e8ij5kbl53" path="res://Map/Background/background.tscn" id="3_3abn2"]
-[ext_resource type="PackedScene" uid="uid://dq0lm06akqbys" path="res://Character/Obstacle/run_end.tscn" id="4_d1xri"]
-[ext_resource type="PackedScene" uid="uid://dmlagrhyum3we" path="res://Character/Obstacle/tomb.tscn" id="5_vuhjh"]
 [ext_resource type="PackedScene" uid="uid://4gm8dm14ka1r" path="res://Character/Obstacle/fire.tscn" id="6_smre4"]
 
 [node name="Game" type="Node2D"]
@@ -24,20 +22,10 @@ metadata/_edit_lock_ = true
 [node name="Background" parent="." instance=ExtResource("3_3abn2")]
 metadata/_edit_lock_ = true
 
-[node name="Run-End" parent="." instance=ExtResource("4_d1xri")]
-position = Vector2(3347, 482)
-metadata/_edit_lock_ = true
-
-[node name="tomb" parent="." instance=ExtResource("5_vuhjh")]
-position = Vector2(3218, 502)
-scale = Vector2(3, 3)
-metadata/_edit_lock_ = true
+[node name="fire" parent="." instance=ExtResource("6_smre4")]
+position = Vector2(987, 509)
 
 [node name="TileMap" parent="." instance=ExtResource("1_dopwa")]
-metadata/_edit_lock_ = true
 
-[node name="AnimatedSprite2D" parent="." instance=ExtResource("6_smre4")]
-position = Vector2(2457, 498)
-metadata/_edit_lock_ = true
-
-[connection signal="body_entered" from="Run-End" to="Hero" method="_on_run_end_body_entered"]
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+current = true
